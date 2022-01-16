@@ -1,0 +1,28 @@
+body {
+	background-color: lightcyan;
+}
+
+h1 {
+	color: red;
+	font-family: 'Helvetica';
+}
+
+p  {
+	color: darkblue;
+}
+
+img {
+	float: right;
+}
+
+a:hover {
+	color: red;
+}
+
+input {
+	border-radius: 30px;
+	background: lightgrey;
+	width: 200px;
+	height: 200px;
+	padding: 50px;
+}
