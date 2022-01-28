@@ -1,30 +1,33 @@
-
-body{
-	background-image: url('dark_wood.png');
+#Header {
+	width: 500px;
+	max-width: 500px;
 }
 
-#Header{
-	width: 500px;
+#LeftNav {
+	padding-bottom: 8px;
+	float: left;
+	width: 400px;
+}
+
+#Content {
+	padding: 15px;
+	width: 700px;
+	text-decoration: underline;
+	text-shadow: 2px 2px gray;
+}
+
+#Header, #LeftNav, #Content, #Footer {
+	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 10px;
-	border: solid 8px black;
-	text-align: center;
-	background-color: #8E41D5;
+	border: groove 8px black;
+	border-radius: 25px;
 }
 
-h3{
-	color: #FFBC00;
-	font-size: 40px;
-	font-family: "Passion One";
-	margin-bottom: 0px;
-
-}
-
-p{
-	color: white;
-	font-family: "Arial";
-	font-weight: bold;
+ul {
+	list-style-type: none;
+	padding-left: 0px;
 }
 
 #Header h1{
@@ -34,52 +37,38 @@ p{
 	font-weight: bold;
 }
 
+p {
+	color: white;
+	font-family: "Ariel";
+	font-weight: bold;
+}
 
-#LeftNav{
-	float: left;
-	width: 400px;
-	border: solid 8px black;
-	text-align: center;
-	padding-bottom: 8px;
+h3 {
+	color: #FFBC00;
+	font-size: 40px;
+	font-family: "Passion One";
+	margin-bottom: 0px;
+}
+
+div {
 	background-color: #8E41D5;
 }
 
-#LeftNav ul{
-	color: white;
+body {
+	background-image: url('dark_wood.png');
+	opacity: 0.7;
 }
 
-a{
+a {
 	color: white;
 	font-weight: bold;
 	font-size: 24px;
 }
 
-ul{
-	list-style-type: none;
-	padding-left: 0px;
+a:visited {
+	color: darkblue;
 }
 
-#Content{
-	width: 700px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 10px;
-	border: solid 8px black;
-	text-align: center;
-	background-color: #8E41D5;
-	padding: 15px;
-
-}
-
-#Footer{
-	text-align: center;
-	border: solid 8px black;
-	background-color: #8E41D5;
-
-}
-
-#bow{
-	color:#FFBC00;
-	font-weight: bold;
-	font-size: 20px;
+a:hover {
+	color: yellow;
 }
