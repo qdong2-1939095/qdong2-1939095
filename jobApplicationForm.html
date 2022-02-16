@@ -11,16 +11,64 @@
 
 <h2>Job Application</h2>
 <p>&nbsp;</p>
-<form role="form" action="http://gclass.alexburner.com/formtest.php" method="post">
 
-	<fieldset class="form-horizontal">
-		<legend>Account</legend>
-		<div class="form-group">
-			<label class="col-sm-3 control-label">Username</label>
-			<div class="col-sm-9">
-				<input class="form-control" type="text" name="username">
-			</div>
+<form name="input" action="http://gclass.alexburner.com/formtest.php" method="post">
+	<div style="font-size: large;">
+		<style>
+			.section {
+				margin-bottom: 15px;
+			}
+			input[type="text"], input[type="password"] {
+				border-radius: 10px;
+				width: 20%;
+				background-color: aliceblue;
+			}
+			input[value="Submit Form"] {
+				border-radius: 10px;
+				width: 60%;
+				float: center;
+				background-color:rgb(240, 255, 252);
+			}
+			textarea {
+				border-radius: 10px;
+				width: 80%;
+				height: 120px;
+				background-color: aliceblue;
+			}
+		</style>
+		<div class="section">
+			First Name: <input type = "text" name="first_name">
+    		Last Name: <input type = "text" name="last_name">
 		</div>
+		<div class="section">
+			Password: <input type = "password" name="password">
+		</div>
+		<div class="section">
+			Describe any relevant experiences: <br>
+			<textarea name="essay" class="essay-box">"type here"</textarea>
+		</div>
+		<div class="section">
+			Applying fulltime? <input type = "radio" name="for_fulltime" value="yes"> Yes
+								<input type = "radio" name="for_fulltime" value="no"> No
+		</div>
+		<div class="section">
+			Got a vehicle? <br>
+			<input type = "checkbox" name="vehicle" value="Bike"> I have bike. <br>
+			<input type = "checkbox" name="vehicle" value="Car"> I have car.
+			<select name="cars" style="width: 10%; height: 30px; background-color: aliceblue;">
+				<option value="volvo">Volvo</option>
+				<option value="saab">Saab</option>
+				<option value="fiat">Fiat</option>
+				<option value="audi">Audi</option>
+			</select>
+		</div>
+
+    	<input type = "submit" value="Submit Form"> <br>
+	</div>
+	<br><br><br>
+
+	<fieldset class="form-horizontal" >
+		<legend>Account</legend>
 		<div class="form-group">
 			<label class="col-sm-3 control-label">Email</label>
 			<div class="col-sm-9">
@@ -43,18 +91,12 @@
 
 	<p>&nbsp;</p>
 
-	<fieldset class="form-horizontal">
+	<fieldset class="form-horizontal" >
 		<legend>Personal Information</legend>
 		<div class="form-group">
-			<label class="col-sm-3 control-label">First Name</label>
+			<label class="col-sm-3 control-label">Full name</label>
 			<div class="col-sm-9">
-				<input class="form-control" type="text" name="firstname">
-			</div>
-		</div>
-		<div class="form-group">
-			<label class="col-sm-3 control-label">Last Name</label>
-			<div class="col-sm-9">
-				<input class="form-control" type="text" name="lastname">
+				<input class="form-control" type="text" name="name">
 			</div>
 		</div>
 		<div class="form-group">
@@ -134,17 +176,6 @@
 				<input class="form-control" type="text" name="zip">
 			</div>
 		</div>
-		<div class="form-group">
-			<label class="col-sm-3 control-label">Campus (if you are from UW)</label>
-			<div class="col-sm-9">
-				<select class="form-control" name="campus">
-					<option value="" selected="true">Choose a campus</option>
-					<option value="sea">Seattle</option>
-					<option value="bot">Bothell</option>
-					<option value="tac">Tacoma</option>
-				</select>
-			</div>
-		</div>
 	</fieldset>
 
 	<p>&nbsp;</p>
@@ -162,35 +193,6 @@
 				<div class="radio">
 					<label>
 						<input type="radio" name="legal" value="no">No
-					</label>
-				</div>
-			</div>
-		</div>
-		<div class="form-group row">
-			<label class="col-sm-12 control-label">Commute method</label>
-			<div class="col-sm-offset-1 col-sm-11">
-				<div class="radio">
-					<label>
-						<input type="radio" name="commute_car" value="car">
-						Car
-					</label>
-				</div>
-				<div class="radio">
-					<label>
-						<input type="radio" name="commute_bike" value="bike">
-						Bike
-					</label>
-				</div>
-				<div class="radio">
-					<label>
-						<input type="radio" name="commute_bus" value="bus">
-						Bus
-					</label>
-				</div>
-				<div class="radio">
-					<label>
-						<input type="radio" name="commute_walk" value="walk">
-						Walk
 					</label>
 				</div>
 			</div>
@@ -228,7 +230,7 @@
 			<label class="col-sm-12 control-label">Hours available</label>
 			<div class="col-sm-12">
 				<table class="table table-bordered">
-					<tbody><tr>
+					<tr>
 						<td></td>
 						<th>Sun</th>
 						<th>Mon</th>
@@ -258,7 +260,7 @@
 						<td><input class="form-control" type="time" name="fr_until"></td>
 						<td><input class="form-control" type="time" name="sa_until"></td>
 					</tr>
-				</tbody></table>
+				</table>
 			</div>
 		</div>
 	</fieldset>
@@ -275,20 +277,7 @@
 			<label class="control-label">Describe a recent project</label>
 			<textarea class="form-control" name="project" rows="6"></textarea>
 		</div>
-		<div class="form-group">
-			<label class="control-label">Do you got any questions for us?</label>
-			<textarea class="form-control" name="project" rows="6"></textarea>
-		</div>
 	</fieldset>
-
-	<p>&nbsp;</p>
-
-	<div>
-		<label>
-			<input type="checkbox" name="acknowledgement" value="check">
-			Please check the box if you acknowledge all the statements.
-		</label>
-	</div>
 
 	<p>&nbsp;</p>
 
@@ -298,6 +287,5 @@
 
 </form>
 </div><!-- close .container -->
-
 </body>
 </html>
